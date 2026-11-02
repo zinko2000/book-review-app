@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import Register from './Register.jsx'
+import Login from './Login.jsx'
 
 export default function App() {
   const [book, setBook] = useState(null)
