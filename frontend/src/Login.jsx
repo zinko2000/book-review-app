@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 export default function Login() {
@@ -9,7 +10,7 @@ export default function Login() {
     event.preventDefault()
 
     try {
-      const response = await fetch('/login.php', {
+      const response = await fetch('/api/login.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 export default function Register() {
@@ -21,7 +22,7 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('/register.php', {
+      const response = await fetch('/api/register.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
