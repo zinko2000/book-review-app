@@ -89,4 +89,4 @@ the PHP backend and database.
 The Hobbit cover:
 https://www.tolkienbooks.us/wp-content/uploads/2017/10/2007-us-hob-hc-11th-75th.jpg
 
-Cover artwork belongs to its respective rights holders.
+Cover artwork belongs to its respective rights holders.  
