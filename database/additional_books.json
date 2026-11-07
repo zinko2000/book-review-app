@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "description": "Alice follows a white rabbit into a strange underground world. Her encounters with talking animals, puzzling rules and an unpredictable queen turn an ordinary afternoon into an extraordinary adventure.",
+    "category": "Fantasy",
+    "publication_year": 1865,
+    "image_path": "images/alice-wonderland.jpg",
+    "source": "https://www.gutenberg.org/ebooks/11",
+    "cover_source": "https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg"
+  },
+  {
+    "title": "The Wonderful Wizard of Oz",
+    "author": "L. Frank Baum",
+    "description": "Carried away from Kansas by a cyclone, Dorothy sets out through Oz to find a way home. A scarecrow, a tin woodman and a lion join her journey to meet the mysterious wizard.",
+    "category": "Fantasy",
+    "publication_year": 1900,
+    "image_path": "images/wizard-of-oz.jpg",
+    "source": "https://www.gutenberg.org/ebooks/55",
+    "cover_source": "https://www.gutenberg.org/cache/epub/55/pg55.cover.medium.jpg"
+  },
+  {
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "description": "Dr Watson recounts twelve investigations led by Sherlock Holmes. From unusual visitors to carefully concealed crimes, the detective uses close observation and reasoning to uncover what others overlook.",
+    "category": "Mystery",
+    "publication_year": 1892,
+    "image_path": "images/sherlock-holmes.jpg",
+    "source": "https://www.gutenberg.org/ebooks/1661",
+    "cover_source": "https://www.gutenberg.org/cache/epub/1661/pg1661.cover.medium.jpg"
+  },
+  {
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "description": "A death on Dartmoor raises fears of a terrifying family curse. Holmes and Watson investigate the threats surrounding the Baskerville heir and search for a human explanation behind a seemingly supernatural danger.",
+    "category": "Mystery",
+    "publication_year": 1902,
+    "image_path": "images/hound-baskervilles.jpg",
+    "source": "https://www.gutenberg.org/ebooks/2852",
+    "cover_source": "https://www.gutenberg.org/cache/epub/2852/pg2852.cover.medium.jpg"
+  },
+  {
+    "title": "The Moonstone",
+    "author": "Wilkie Collins",
+    "description": "A valuable diamond disappears after arriving at an English country house. Accounts from several people reveal conflicting clues, hidden motives and the consequences of the jewel's troubled history.",
+    "category": "Mystery",
+    "publication_year": 1868,
+    "image_path": "images/moonstone.jpg",
+    "source": "https://www.gutenberg.org/ebooks/155",
+    "cover_source": "https://www.gutenberg.org/cache/epub/155/pg155.cover.medium.jpg"
+  },
+  {
+    "title": "The War of the Worlds",
+    "author": "H. G. Wells",
+    "description": "An invasion from Mars overturns everyday life in England. An unnamed narrator struggles to survive as unfamiliar machines and weapons expose how vulnerable human society can be.",
+    "category": "Science fiction",
+    "publication_year": 1898,
+    "image_path": "images/war-of-worlds.jpg",
+    "source": "https://www.gutenberg.org/ebooks/36",
+    "cover_source": "https://www.gutenberg.org/cache/epub/36/pg36.cover.medium.jpg"
+  },
+  {
+    "title": "The Time Machine",
+    "author": "H. G. Wells",
+    "description": "An inventor travels far into the future and discovers a world unlike his own. His encounter with the Eloi and Morlocks becomes an unsettling exploration of humanity, change and social divisions.",
+    "category": "Science fiction",
+    "publication_year": 1895,
+    "image_path": "images/time-machine.jpg",
+    "source": "https://www.gutenberg.org/ebooks/35",
+    "cover_source": "https://www.gutenberg.org/cache/epub/35/pg35.cover.medium.jpg"
+  },
+  {
+    "title": "Journey to the Centre of the Earth",
+    "author": "Jules Verne",
+    "description": "A decoded message leads a professor, his nephew and their guide into an Icelandic volcano. Their expedition reveals vast underground spaces and unexpected dangers beneath the Earth's surface.",
+    "category": "Science fiction",
+    "publication_year": 1864,
+    "image_path": "images/journey-centre-earth.jpg",
+    "source": "https://www.gutenberg.org/ebooks/18857",
+    "cover_source": "https://www.gutenberg.org/cache/epub/18857/pg18857.cover.medium.jpg"
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "Elizabeth Bennet and Mr Darcy misjudge each other amid family expectations and pressure to marry. As their understanding changes, both must reconsider the assumptions that shape their choices.",
+    "category": "Romance",
+    "publication_year": 1813,
+    "image_path": "images/pride-prejudice.jpg",
+    "source": "https://www.gutenberg.org/ebooks/1342",
+    "cover_source": "https://www.gutenberg.org/cache/epub/1342/pg1342.cover.medium.jpg"
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "description": "After a difficult childhood, Jane becomes a governess at Thornfield Hall. Her growing attachment to Mr Rochester tests her independence when the house's secrets challenge the future she imagines.",
+    "category": "Romance",
+    "publication_year": 1847,
+    "image_path": "images/jane-eyre.jpg",
+    "source": "https://www.gutenberg.org/ebooks/1260",
+    "cover_source": "https://www.gutenberg.org/cache/epub/1260/pg1260.cover.medium.jpg"
+  },
+  {
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "description": "The Dashwood sisters face reduced circumstances and uncertain romantic prospects. Elinor's restraint and Marianne's openness lead them through disappointment as they learn to balance feeling with judgment.",
+    "category": "Romance",
+    "publication_year": 1811,
+    "image_path": "images/sense-sensibility.jpg",
+    "source": "https://www.gutenberg.org/ebooks/161",
+    "cover_source": "https://www.gutenberg.org/cache/epub/161/pg161.cover.medium.jpg"
+  },
+  {
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "description": "A map draws young Jim Hawkins into a voyage in search of buried treasure. Mutiny and shifting loyalties force him to navigate the dangers posed by Long John Silver and his fellow pirates.",
+    "category": "Adventure",
+    "publication_year": 1883,
+    "image_path": "images/treasure-island.jpg",
+    "source": "https://www.gutenberg.org/ebooks/120",
+    "cover_source": "https://www.gutenberg.org/cache/epub/120/pg120.cover.medium.jpg"
+  },
+  {
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "description": "Taken from his comfortable home, Buck is sold as a sled dog in the North. Harsh conditions and new loyalties draw him toward the wilderness and a life beyond domestication.",
+    "category": "Adventure",
+    "publication_year": 1903,
+    "image_path": "images/call-of-wild.jpg",
+    "source": "https://www.gutenberg.org/ebooks/215",
+    "cover_source": "https://www.gutenberg.org/cache/epub/215/pg215.cover.medium.jpg"
+  },
+  {
+    "title": "Around the World in Eighty Days",
+    "author": "Jules Verne",
+    "description": "Phileas Fogg and his companion Passepartout attempt to circle the globe within eighty days. Their wager becomes a race through delays, misunderstandings and unexpected encounters across continents.",
+    "category": "Adventure",
+    "publication_year": 1873,
+    "image_path": "images/around-world-eighty-days.jpg",
+    "source": "https://www.gutenberg.org/ebooks/103",
+    "cover_source": "https://www.gutenberg.org/cache/epub/103/pg103.cover.medium.jpg"
+  }
+]
