@@ -66,3 +66,25 @@ h2 {
     padding: 28px 20px;
   }
 }
+  .site-nav {
+  max-width: 850px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-nav a {
+  color: #365c43;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background: #e5e9e5;
+  text-decoration: underline;
+}
