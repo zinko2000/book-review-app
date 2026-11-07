@@ -1,0 +1,53 @@
+
+.home {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .home h1 {
+    color: #244b3a;
+    font-size: 36px;
+  }
+  
+  .home p {
+    color: #555;
+    font-size: 18px;
+  }
+  
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .book-card {
+    background-color: #f5f7f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #244b3a;
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+  }
+  
+  .book-card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .book-card p {
+    font-size: 15px;
+  }
+  
+  @media (max-width: 700px) {
+    .books {
+      grid-template-columns: 1fr;
+    }
+  }
+  
