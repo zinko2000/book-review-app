@@ -1,92 +1,75 @@
 # Book Review App
 
-Group project using React + Vite, PHP, and a MySQL-compatible database.
-XAMPP supplies Apache, PHP, and MariaDB for local development.
+Shelf Notes is a group project built with React, Vite, PHP, and MariaDB. It runs locally using XAMPP.
 
 ## Current progress
 
-- Homepage displays up to six random books from the database.
-- Clicking a book opens its details page.
-- Book details include title, cover, author, category, year, and description.
+- The database contains 15 books across five categories: Fantasy, Mystery, Science fiction, Romance, and Adventure.
+- The homepage displays six randomly selected books.
+- Clicking a book shows its cover, author, category, publication year, and description.
 - Missing books display "Book not found."
 - Registration and login have been tested successfully.
-- Navigation connects Home, Login, and Register.
-- Currently contains one sample book: The Hobbit.
-- Additional books are awaiting the team's agreed dataset.
+- The navigation connects Home, Login, and Register.
 
 ## Local setup
 
 1. Install XAMPP, Node.js with npm, and Git.
-2. Clone this repository into your XAMPP htdocs folder:
+2. Open a terminal in your XAMPP `htdocs` folder and clone the repository:
 
-   ```text
+   ```powershell
    git clone https://github.com/zinko2000/book-review-app.git
    ```
 
-3. Keep the project folder named book-review-app.
-4. Start Apache and MySQL in the XAMPP Control Panel.
-5. Open http://localhost/phpmyadmin.
-6. Create an empty database named book_review_db.
-7. Select that database and import these files in order:
-   - database/book_review_db.sql
-   - database/users_table.sql
-8. Check db.php matches your local database settings.
-   Current settings: localhost, username root, blank password.
-   These settings are for local development only.
-9. Open a terminal in the book-review-app folder and run:
+3. Start Apache and MySQL in the XAMPP Control Panel.
+4. Open [phpMyAdmin](http://localhost/phpmyadmin) and create a database named `book_review_db`.
+5. Select `book_review_db` and import these files in order:
 
-   ```text
+   - `database/book_review_db.sql` — creates the books table and adds The Hobbit.
+   - `database/users_table.sql` — creates the users table.
+   - `database/additional_books.sql` — adds the 14 remaining books.
+
+   If your database already has the books and users tables from the earlier setup, import only `database/additional_books.sql` to add the new books.
+
+6. Check that `db.php` matches your local database settings. The project uses `localhost`, username `root`, and a blank password for local XAMPP development.
+7. Open a terminal in the `book-review-app` folder and run:
+
+   ```powershell
    cd frontend
    npm.cmd install
    npm.cmd run dev
    ```
 
-10. Open the Local URL printed in the terminal, normally:
-    http://localhost:5173/
-
-Keep Apache, MySQL, and the Vite terminal running.
+8. Open the local URL printed in the terminal, normally [http://localhost:5173/](http://localhost:5173/).
 
 ## Starting the app after setup
 
-1. Start Apache and MySQL in XAMPP.
-2. Double-click start-app.bat in the project folder.
-3. Open the Local URL printed in the terminal.
-4. Keep the launcher window open while using the app.
+Start Apache and MySQL in XAMPP, then double-click `start-app.bat` in the project folder. Open the URL printed in the launcher window and keep that window open while using the app.
 
 ## Pages
 
-- Homepage: http://localhost:5173/
-- Sample book: http://localhost:5173/?id=1
-- Registration: http://localhost:5173/?page=register
-- Login: http://localhost:5173/?page=login
+- [Homepage](http://localhost:5173/)
+- [Book details: The Hobbit](http://localhost:5173/?id=1)
+- [Registration](http://localhost:5173/?page=register)
+- [Login](http://localhost:5173/?page=login)
 
-If Vite uses a different port, use the URL shown in its terminal.
+If Vite uses a different port, use the URL printed in the terminal.
 
 ## API
 
-- Random books: http://localhost/book-review-app/books.php
-- Existing book: http://localhost/book-review-app/book.php?id=1
-- Missing book: http://localhost/book-review-app/book.php?id=9999
-- Registration: POST to /api/register.php through Vite.
-- Login: POST to /api/login.php through Vite.
+- `GET /api/books.php` — returns up to six random books.
+- `GET /api/book.php?id=1` — returns the details for book 1.
+- `POST /api/register.php` — creates a user account.
+- `POST /api/login.php` — checks login credentials.
 
-The Vite development proxy forwards /api requests to
-http://localhost/book-review-app.
+The Vite development proxy forwards `/api` requests to `http://localhost/book-review-app`.
 
 ## Build check
 
-From the frontend folder, run:
+From the `frontend` folder, run `npm.cmd run build`. This generates `frontend/dist`. Running the complete app also requires the PHP backend and database.
 
-```text
-npm.cmd run build
-```
+## Book and cover sources
 
-This generates frontend/dist. Running the complete app still requires
-the PHP backend and database.
+- [Sources for the 14 additional books and covers](docs/book-sources.md)
+- [The Hobbit cover — TolkienBooks.US](https://www.tolkienbooks.us/wp-content/uploads/2017/10/2007-us-hob-hc-11th-75th.jpg)
 
-## Cover image source
-
-The Hobbit cover:
-https://www.tolkienbooks.us/wp-content/uploads/2017/10/2007-us-hob-hc-11th-75th.jpg
-
-Cover artwork belongs to its respective rights holders.  
+Cover artwork belongs to its respective rights holders.
