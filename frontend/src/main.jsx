@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './Home.jsx'
 import Register from './Register.jsx'
 import Login from './Login.jsx'
+import Favourites from './Favourites.jsx'
 
 const params = new URLSearchParams(window.location.search)
 const page = params.get('page')
@@ -12,6 +13,7 @@ const page = params.get('page')
 const screen =
   page === 'register' ? <Register /> :
   page === 'login' ? <Login /> :
+  page === 'favourites' ? <Favourites /> :
   params.has('id') ? <App /> :
   <Home />
 
@@ -19,6 +21,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <nav className="site-nav" aria-label="Main navigation">
       <a href="/">Home</a>
+      <a href="/?page=favourites">Favourites</a>
       <a href="/?page=login">Login</a>
       <a href="/?page=register">Register</a>
     </nav>
