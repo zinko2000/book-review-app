@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import './Auth.css'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -35,7 +36,7 @@ export default function Login() {
   }
 
   return (
-    <main>
+    <main className="auth-page">
       <h1>Login</h1>
 
       <form onSubmit={handleLogin}>
