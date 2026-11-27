@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import Register from './Register.jsx'
-import Login from './Login.jsx'
+import Reviews from './Reviews.jsx'
 
 export default function App() {
   const [book, setBook] = useState(null)
@@ -53,6 +52,8 @@ export default function App() {
 
       <h2>Description</h2>
       <p>{book.description}</p>
+
+      <Reviews bookId={book.book_id} />
     </main>
   )
 }

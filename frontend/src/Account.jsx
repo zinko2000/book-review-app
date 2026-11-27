@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import './Account.css'
+import Reviews from './Reviews.jsx'
 
 function Account() {
   const [user, setUser] = useState({
@@ -86,7 +87,7 @@ function Account() {
     return <p>Loading account...</p>
   }
 
-  if (error) {
+  if (error && loading === false && !user.user_id) {
     return (
       <main className="account-page">
         <div className="account-container">
@@ -160,6 +161,7 @@ function Account() {
             {saving ? 'Saving...' : 'Save Changes'}
           </button>
         </form>
+        <Reviews mine />
       </section>
     </main>
   )

@@ -1,0 +1,19 @@
+SHELF NOTES - ZIN KO'S REVIEWS AND RATINGS UPDATE
+
+This ZIP contains changed/new files only. It is NOT the final assessment ZIP.
+
+1. Back up your existing book-review-app folder.
+2. Copy backend, database, docs, frontend and reviews.php into:
+   D:\xampp\htdocs\book-review-app
+   Merge the folders and replace matching files. Keep the existing project files.
+3. In phpMyAdmin, select book_review_db, then import:
+   D:\xampp\htdocs\book-review-app\database\reviews_table.sql
+4. In VS Code terminal, at D:\xampp\htdocs\book-review-app, run:
+   composer install
+5. Start Apache and MySQL, run .\start-app.bat, log in, and open a book.
+
+If Composer is not recognised, stop there and share that error.
+Do not delete your database or reimport the original books setup.
+
+Full instructions, tests, database export steps and your viva notes:
+docs/reviews-guide.md
