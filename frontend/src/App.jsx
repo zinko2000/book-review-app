@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Favourites from './Favourites.jsx'
 import Reviews from './Reviews.jsx'
 
 export default function App() {
@@ -52,6 +53,7 @@ export default function App() {
 
       <h2>Description</h2>
       <p>{book.description}</p>
+      <Favourites bookId={book.book_id} />
 
       <Reviews bookId={book.book_id} />
     </main>
