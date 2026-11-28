@@ -1,0 +1,4 @@
+.DS_Store
+vendor/
+*.backup.php
+frontend/src/main.backup.jsx

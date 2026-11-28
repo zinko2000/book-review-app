@@ -7,7 +7,7 @@ require "db.php";
 if (isset($_GET["catalogue"])) {
     $result = $conn->query("SELECT * FROM books ORDER BY title");
 } else {
-    $result = $conn->query("SELECT * FROM books ORDER BY RAND() LIMIT 6");
+    $result = $conn->query("SELECT * FROM books ORDER BY RAND()");
 }
 
 $books = [];

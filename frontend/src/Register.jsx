@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import './Auth.css'
 
 export default function Register() {
   const [name, setName] = useState('')
@@ -43,7 +44,7 @@ export default function Register() {
   }
 
   return (
-    <main>
+    <main className="auth-page">
       <h1>Create an Account</h1>
 
       <form onSubmit={handleRegister}>

@@ -1,0 +1,123 @@
+
+.account-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px #00000012;
+  text-align: left;
+}
+
+.account-page h1 {
+  text-align: center;
+  color: #244b3a;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.account-page > p,
+.account-container > p {
+  text-align: center;
+  color: #555;
+  font-size: 17px;
+}
+
+.account-container {
+  width: 100%;
+}
+
+.account-container form {
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+.account-container h2 {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e9e5;
+  color: #244b3a;
+  font-size: 24px;
+}
+
+.account-container label {
+  display: block;
+  margin: 18px 0 6px;
+  font-weight: bold;
+  color: #244b3a;
+}
+
+.account-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5dcd5;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.account-container input:focus {
+  outline: 2px solid #244b3a;
+  border-color: #244b3a;
+}
+
+.account-container button {
+  margin-top: 28px;
+  padding: 12px 24px;
+  width: 100%;
+  background: #244b3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.account-container button:hover {
+  background: #1b382b;
+}
+
+.account-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.account-login-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.account-login-link a {
+  color: #244b3a;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.account-login-link a:hover {
+  text-decoration: underline;
+}
+
+.account-success {
+  color: #267344;
+  text-align: center;
+}
+
+.account-error {
+  color: #b42318;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .account-page {
+    padding: 24px 18px;
+  }
+  .account-container > p.account-error {
+  color: #b42318;
+}
+}

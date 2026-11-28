@@ -1,5 +1,5 @@
-
 import { useState } from 'react'
+import './Auth.css'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -8,10 +8,12 @@ export default function Login() {
 
   async function handleLogin(event) {
     event.preventDefault()
+    setMessage('')
 
     try {
       const response = await fetch('/api/login.php', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -28,14 +30,14 @@ export default function Login() {
         return
       }
 
-      setMessage(data.message || 'Login successful!')
+      window.location.href = '/'
     } catch {
       setMessage('Could not connect to the server.')
     }
   }
 
   return (
-    <main>
+    <main className="auth-page">
       <h1>Login</h1>
 
       <form onSubmit={handleLogin}>
@@ -43,6 +45,7 @@ export default function Login() {
         <input
           id="email"
           type="email"
+          autoComplete="username"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           required
@@ -52,6 +55,7 @@ export default function Login() {
         <input
           id="password"
           type="password"
+          autoComplete="current-password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           required

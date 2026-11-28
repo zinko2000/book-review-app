@@ -28,7 +28,7 @@ export default function Home() {
         const matchesGenre = !genre || book.category === genre
         return matchesTitle && matchesGenre
       })
-    : books
+    : books.slice(0, 6)
 
   return (
     <main className="home">
